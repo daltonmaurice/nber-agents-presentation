@@ -107,7 +107,7 @@ AI Agents are mostly autonomous systems built on LLMs by giving them access to t
 - Create a test data to run a simulation to unit test the model being developed. 
 
 
-## The need for Evaluation (Eval) {.smaller}
+## The need for Evaluation {.smaller}
 
 - As we thinking about what we want agents to do, we need to think about how to evaluate them.
 
@@ -115,6 +115,10 @@ AI Agents are mostly autonomous systems built on LLMs by giving them access to t
 - Having general benchmarkets is important to help us understand the performance of the agents across different models and domains.
 
 ![](pics/roocode-evals-example.png){width=100%}
+
+::: {.footer}
+Source: [RooCode](https://roocode.ai)
+:::
 
 
 ## 🔒 The Critical Importance of Data Security {.smaller}
