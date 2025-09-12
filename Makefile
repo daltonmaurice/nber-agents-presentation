@@ -14,6 +14,7 @@ all: html pdf
 # Build HTML presentation (RevealJS)
 html: $(SOURCE)
 	quarto render $(SOURCE) --to revealjs
+	cp $(HTML_OUTPUT) index.html
 
 # Build PDF presentation (Beamer)
 pdf: $(SOURCE)
