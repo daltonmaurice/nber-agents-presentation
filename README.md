@@ -6,6 +6,7 @@ This repository contains a Quarto presentation about AI-powered economic researc
 
 You can access the presentation in two formats:
 
+
 - **HTML (Interactive)**: View online at https://[your-github-username].github.io/nber-agents-presentation/
 - **PDF**: Download from https://[your-github-username].github.io/nber-agents-presentation/nber-agents-presentation.pdf
 
