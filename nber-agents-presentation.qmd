@@ -1,0 +1,191 @@
+---
+title: "AI-Powered Economic Research workflows"
+format:
+  revealjs:
+    theme: default
+    logo: pics/aivaluation_per_employee.png
+    footer: "AI Agents & Secure Virtual Labs"
+    incremental: false
+    embed-resources: true
+    self-contained: true
+  pdf:
+    documentclass: beamer
+    theme: default
+    fontsize: 8pt
+    geometry:
+      - margin=0.5in
+    aspectratio: 169
+editor: visual
+---
+
+
+
+## Augmented Research Workflows {.smaller}
+
+🎯 **Goal:** To introduce the concept of AI as a collaboration tool, and AI agents as a powerful new tool for improving research workflows and to demonstrate their practical application within a secure virtual lab environment, using the study of hospital mergers as a case study.
+
+📝 **Note:** I created a deep research article on this topic: https://docs.google.com/document/d/1_pBhzXYG1cHE1g6oS3SL1F_Nete-KrddQYG0eTP0i4Q/edit?usp=sharing 
+
+
+
+## 📈 The Evolving Landscape {.smaller}
+
+1. 📚 **Traditional Workflow**: Manual literature reviews, Researcher driven coding 
+
+2. 🚀 **New Wave: LLM-powered AI Augmentation**: AI as collaborative partner, mostly through a chat interface. Similar to early days of "googling"
+
+3. 🎯 **Next wave: LLM powered by tools, e.g. AI agents**: AI Agents as workflow enablers
+
+
+## 🤖 Demystifying AI Agents {.smaller}
+
+🔍 What are these new tools? 
+
+AI Agents are mostly autonomous systems built on LLMs by giving them access to tools that can:
+
+- 🎯 Manage context, e.g. using memory to keep track of previous steps
+
+- 📝 Create detailed plans
+
+- 🛠️ Use various tools (e.g. web search, code execution, data analysis, write reports)
+
+- 🔄 Execute multi-step tasks
+
+## 📈 The Leap Forward: {.smaller}
+
+1. 💬 **Chatbots** : Basic Q&A capabilities, single-turn responses, limited context retention
+   
+2. 🧠 **Reasoning Engines** : Multi-step thinking, improved context handling, still confined in scope
+
+3. 🚀 **AI Agents** : Proactive problem-solving, advanced tool utilization, autonomous goal pursuit 
+
+💡 **Key Analogy:** Think of an AI Agent as a research assistant you can delegate tasks to, not just a calculator for computations.
+
+## ⚡ Some example Research Agents {.smaller}
+
+1. 📚 **Automated Literature Synthesis** : Comprehensive source scanning, Automated citation management, Intelligent synthesis
+
+2. 💻 **Code Generation & Debugging** : Natural language to code, Multi-language support (Python, R, Stata), Intelligent debugging
+
+3. 🔍 **Autonomous Data Handling** : Automated data collection, Smart cleaning algorithms, Advanced analysis tools, Multi-source integration
+
+4. 🔄 **Workflow Orchestration** : End-to-end automation, Simulation management, Results analysis, Visualization generation
+
+## 👨‍💻 What does using Agents look like? {.smaller}
+
+1. 💻 **Development Environment**: Modern IDEs integration, Seamless workflow integration, Real-time assistance
+
+2. 🤖 **Agent Interaction** : Chat-based interface, Customizable personas, Task-specific fine-tuning, Economic research specialization
+
+3. 🌐 **Available Platforms** : 📓 Notebook LM with research tools, 🔧 Gemini/OpenAI/Anthropic integration, 🛠️ VSCode with extensions (e.g., Clive), 🚀 Cursor's built-in agent support, AWS bedrock, Azure openai, Google vertex ai, Python frameworks like langchain.
+
+4. 📊 **Deep research** : Gemini, Claude, OpenAI all have their own ways to do deep research. Its basically where you have an LLM attached to tool, you instruct it what to do then it returns with a report. I have used Gemini for deep research, the most. Use it for the planning phase of a tool build. 
+
+## What are tools in the Agent contest? {.smaller}
+
+- Tools are anything which the LLM has access to which it can use to complete a task 
+
+- MCP is how LLMs access different tools, think of it as an api wich allows the LLM to interact with something  
+
+
+## Context is King {.smaller}
+
+- Context refers to the memory of an LLM. There are often limits to the context of different models  
+
+- Hallucinations are more commond as we fill up the tokens the model is tracking. 
+
+- LLM and agents excell at well scoped task where full context is given, creating a plan before executing is important to think through the task and the results.
+
+- Documenataion and githhub can add context and add value to the agents 
+
+
+## How can we trust AI based collaboration? {.smaller}
+
+- 🤔 Trust but verify. When creating a plan, always think about how to verify the results. 
+
+- Do we have a dataset we trust? Then we have labeled data we can test against and create score against. 
+
+- Create a test data to run a simulation to unit test the model being developed. 
+
+
+## The need for Evaluation (Eval) {.smaller}
+
+- As we thinking about what we want agents to do, we need to think about how to evaluate them.
+
+
+- Having general benchmarkets is important to help us understand the performance of the agents across different models and domains.
+
+![](pics/roocode-evals-example.png){width=100%}
+
+
+## 🔒 The Critical Importance of Data Security {.smaller}
+
+LLMs from big providers collect your data and we need to be careful about what is shared. 
+
+1. ⚠️ **Security Challenges** : Public AI tool risks, data exposure concerns, privacy compliance, regulatory requirements
+
+3. 💪 **AWS Bedrock Solution** : Private cloud environment, leading LLM access, secure infrastructure, controlled data flow
+
+4. ✅ **Key Guarantees** : No external data training, complete confidentiality, virtual private cloud, data integrity preservation
+
+5. 🎯 **End Result** : Powerful AI utilization, zero compromise on security, full research capability, regulatory compliance
+
+## 🏥 Case Study: Analyzing a Hospital Merger {.smaller}
+
+A research team evaluates economic impacts of a proposed hospital merger using AI-powered analysis.
+
+**🔄 AI-Assisted Workflow**
+
+1. 📝 **Initial Task Delegation** : High-level goal setting and planning. Human expert provides high level of oversight. 
+Can use tools to help find ambiguities in the task. High level of payoff for human involvement. How will we test?
+
+2. 🔍 **Data Collection Phase** : 📊 Regulatory and news filing data web scraping via a script. Get a test dataset to compare results against.
+
+3. 🤖 **Model Development and teaching** : Read this paper, code and help me implment model. What are the tradeoffs? Help me create a simulation using test data to understand the model.
+
+4. 📈 **Analysis & Visualization** : 📊 Write analysis code from task delegation, weigh tradeoffs from using different open source tools, 📉 Trend visualization, 📑 Comprehensive reporting
+
+
+
+
+## 🔬 Towards a virtual Lab{.smaller}
+
+1. 🛡️ **Core Definition** : A secure environment with access to specialized agents which agents can work within. Agents can coordinate and collaborate, learn autonomously and solve complex tasks.
+
+
+
+::: {.r-stretch}
+![](pics/changed-virtual-lab.png)
+:::
+
+::: {.footer}
+Source: [Nature Paper](https://www.nature.com/articles/s41586-025-09442-9) | [GitHub Repository](https://github.com/zou-group/virtual-lab)
+:::
+
+## 🎯 Key takeaways {.smaller}
+
+1. 🚀 **Transformation**: Researchers are becoming managers adding value by providing expertise and guidance to the agents.
+
+2. 🔒 **Security & Trust** : Public providers keep your data. AWS Bedrock integration allows us to protect our data and IP
+
+3. 💪 **Empowerment**: Knowing the what you want to do and how to verify lowers the barrier to using new toolset
+
+## 🤔 Discussion Points {.smaller}
+
+1. 🎯 **Quick Wins**
+   - Which tasks to automate first? (merger checking, data downloading, closure researcher)
+   - What's easily achievable?
+   - How to measure success?
+
+2. ⚠️ **Challenges**
+   - Handling hallucinations
+   - Ensuring reproducibility
+   - Managing limitations
+   - Maintaining quality
+
+3. 🚀 **Next Steps**
+   - Pilot project selection
+   - Implementation strategy
+   - Success metrics
+   - Timeline planning
+   - What tools and knowledge should we provide to the agents?
