@@ -8,13 +8,12 @@ format:
     incremental: false
     embed-resources: true
     self-contained: true
-  pdf:
-    documentclass: beamer
+  beamer:
     theme: default
     fontsize: 8pt
-    geometry:
-      - margin=0.5in
     aspectratio: 169
+    header-includes: |
+      \geometry{margin=0.5in}
 editor: visual
 ---
 

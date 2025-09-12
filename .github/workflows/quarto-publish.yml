@@ -1,0 +1,41 @@
+name: Publish Quarto Presentation
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: pre-release
+
+      - name: Install TinyTeX
+        uses: quarto-dev/quarto-actions/setup-tinytex@v2
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Prepare deployment
+        run: |
+          mkdir -p _site
+          cp nber-agents-presentation.html _site/index.html
+          cp nber-agents-presentation.pdf _site/
+          cp -r pics _site/
+          cp README.md _site/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          publish_branch: gh-pages
