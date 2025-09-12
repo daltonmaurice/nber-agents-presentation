@@ -25,7 +25,9 @@ jobs:
           echo "PATH=$PATH:$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_ENV
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+        shell: bash
+        run: |
+          quarto render nber-agents-presentation.qmd
 
       - name: Prepare deployment
         run: |
