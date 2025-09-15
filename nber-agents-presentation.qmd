@@ -21,9 +21,10 @@ editor: visual
 
 ## Augmented Research Workflows {.smaller}
 
-🎯 **Goal:** To introduce the concept of AI as a collaboration tool, and AI agents as a powerful new tool for improving research workflows and to demonstrate their practical application within a secure virtual lab environment, using the study of hospital mergers as a case study.
+🎯 **Goal:** To introduce the concept of AI as a collaboration tool, and AI agents as a powerful new tool for improving research workflows. Want to get people thinking about how to use AI to improve their research workflows 
+while highlighting limitations and potential. 
 
-📝 **Note:** I created a deep research article on this topic: https://docs.google.com/document/d/1_pBhzXYG1cHE1g6oS3SL1F_Nete-KrddQYG0eTP0i4Q/edit?usp=sharing 
+
 
 
 
@@ -31,7 +32,7 @@ editor: visual
 
 1. 📚 **Traditional Workflow**: Manual literature reviews, Researcher driven coding 
 
-2. 🚀 **New Wave: LLM-powered AI Augmentation**: AI as collaborative partner, mostly through a chat interface. Similar to early days of "googling"
+2. 🚀 **New Wave: LLM-powered AI Augmentation**: AI as collaborative partner, mostly through a chat interface. Similar to early days of "googling". What are peoples mental models of how AI works?
 
 3. 🎯 **Next wave: LLM powered by tools, e.g. AI agents**: AI Agents as workflow enablers
 
@@ -127,11 +128,10 @@ LLMs from big providers collect your data and we need to be careful about what i
 
 1. ⚠️ **Security Challenges** : Public AI tool risks, data exposure concerns, privacy compliance, regulatory requirements
 
-3. 💪 **AWS Bedrock Solution** : Private cloud environment, leading LLM access, secure infrastructure, controlled data flow
+3. 💪 **AWS Bedrock Solution** : Private cloud environment, access to some but not all public models, secure infrastructure
 
 4. ✅ **Key Guarantees** : No external data training, complete confidentiality, virtual private cloud, data integrity preservation
 
-5. 🎯 **End Result** : Powerful AI utilization, zero compromise on security, full research capability, regulatory compliance
 
 ## 🏥 Case Study: Analyzing a Hospital Merger {.smaller}
 
@@ -139,14 +139,15 @@ A research team evaluates economic impacts of a proposed hospital merger using A
 
 **🔄 AI-Assisted Workflow**
 
-1. 📝 **Initial Task Delegation** : High-level goal setting and planning. Human expert provides high level of oversight. 
-Can use tools to help find ambiguities in the task. High level of payoff for human involvement. How will we test?
+1. 📝 **Initial Task Delegation** : High level of payoff for human involvement. Set goals, plan and how to verify. Can use to highlight ambiguities in the plan. Which API should we use? Do we have test data? How should we validated? What metrics should we use? Whats the final product look lile? Do we have key figures we are interested? (Researcher as manager)
 
-2. 🔍 **Data Collection Phase** : 📊 Regulatory and news filing data web scraping via a script. Get a test dataset to compare results against.
+2. 🔍 **Data Collection Phase** : 📊 Use a coding assistant (e.g. Cursor, VScode) to write a script to scrape news filings of hospitals mergers in the last year in and in this year. Get a test dataset to compare results against.
 
-3. 🤖 **Model Development and teaching** : Read this paper, code and help me implment model. What are the tradeoffs? Help me create a simulation using test data to understand the model.
+3. 📈 **Analysis & Visualization** : 📊 Given data collected, use coding assistant to write a report that give key stats and figures. Do for new year and last year, to give us a benchmark. Identify outlier or cases to validate by hand.
 
-4. 📈 **Analysis & Visualization** : 📊 Write analysis code from task delegation, weigh tradeoffs from using different open source tools, 📉 Trend visualization, 📑 Comprehensive reporting
+**Future steps**
+
+Setup to run autonomously every X months. Researcher will review report and validated results, maybe through a random sampling of cases. 
 
 
 
@@ -169,7 +170,7 @@ Source: [Nature Paper](https://www.nature.com/articles/s41586-025-09442-9) | [Gi
 
 1. 🚀 **Transformation**: Researchers are becoming managers adding value by providing expertise and guidance to the agents.
 
-2. 🔒 **Security & Trust** : Public providers keep your data. AWS Bedrock integration allows us to protect our data and IP
+2. 🔒 **Security & Trust** : Done in a sandboxed environment where AI agents can run analysis. Option to protect data from LLM provider. 
 
 3. 💪 **Empowerment**: Knowing the what you want to do and how to verify lowers the barrier to using new toolset
 
