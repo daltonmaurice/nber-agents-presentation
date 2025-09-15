@@ -115,8 +115,7 @@ AI Agents are mostly autonomous systems built on LLMs by giving them access to t
 
 - Having general benchmarkets is important to help us understand the performance of the agents across different models and domains.
 
-![](pics/roocode-evals-example.png){width=100%}
-
+![](pics/roocode-evals-example.png)
 ::: {.footer}
 Source: [RooCode](https://roocode.ai)
 :::
