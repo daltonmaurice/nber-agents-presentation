@@ -182,13 +182,8 @@ Source: [Nature Paper](https://www.nature.com/articles/s41586-025-09442-9) | [Gi
 
 2. ⚠️ **Challenges**
    - Handling hallucinations
-   - Ensuring reproducibility
-   - Managing limitations
    - Maintaining quality
 
 3. 🚀 **Next Steps**
-   - Pilot project selection
-   - Implementation strategy
-   - Success metrics
-   - Timeline planning
-   - What tools and knowledge should we provide to the agents?
+   - Choose tasks to focus an AI-enhacned workflow 
+   - Which tools should the team adopt?
